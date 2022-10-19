@@ -5,54 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
-<h1>Hello world!</h1>
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h3 {
+            color: rgb(119, 109, 180);
+        }
+    </style>
+    
 </head>
-<body>
-    <br>
-    <br>
 
-    <div>  
-        <img src="https://i.picsum.photos/id/320/200/200.jpg?hmac=Syj43GcEEip7sKg4XO0j94Ot5UbBIA84E_x2PzRo1ow" alt="travel">
+<body>
+<!-- <div class="first-class">
+    <div class="second-class">
+        <h1 id="first-id"
+        class="third-class">Text</h1>
     </div>
-    <br>
-    <h4>
-        Please <a href="contact.html">Contact</a> with us
+</div> -->
+    <header>
+        <h1>Hello world!</h1>
+        
+        <h4>
+       <a href="contact.html">Contact me</a> 
     </h4>
 
+    </header>
 
-    <br>
-    <br>
-    <br>
+
+
+    <!-- <h1 style="display: none;">Hello world!</h1> element wogóle nie występuje w źrudle strony -->
+  
+
+    <!-- <div>  
+        <img src="https://i.picsum.photos/id/320/200/200.jpg?hmac=Syj43GcEEip7sKg4XO0j94Ot5UbBIA84E_x2PzRo1ow" alt="travel">
+    </div> -->
+  
+    <!-- id stosujemy wtedy gdy mamy jakis jeden element na stronie z ktorym chemy cos zrobic lub zmienic go,i Nie mozna miec id="main content" 2 raza na stronie -->
+
+    <div id="main-content">
+        
+
+        <section id="articles" style="position: relative; left: 20px;"> 
+       
     <article>
-        <h3><p style="color:rgb(126, 28, 28);text-decoration: none;">This post is about travel</p></h3>
+              
+           <h3>This post is about <i>travel</i></h3>
+        </article>
+
+       
+
+    <article>
+            <p><b>The World's Most Visited Cities</b></p>
+        <!-- width-szerokość dotyczy tylko obszaru treści -->
+         
     
-        <br>
-         The World's Most Visited Cities
-    <ol>
-        <li>Bangkok</li>
+        <b><li>Bangkok</li>
         <li>Paris</li>
         <li>London</li>
-        <li>Dubai</li>
-    </ol>
+        <li>Dubai</li></b>
     </article>
+
+    <article>
+        <h3>This post is about travel<h3>
+
+            <p>This is my first blog post</p>
+    </article>
+    <article>
+        <h3>This post is about travel<h3>
+
+            <p>This is my first blog post</p>
+    </article>
+    <article>
+        <h3>This post is about travel<h3>
+
+            <p>This is my first blog post</p>
+    </article>
+
+       
+     
    
+      </section>
+    
+     
+      <!-- <p style="border: 1px solid black; padding: 10px;margin-bottom: 120px; width:  200px;"> -->
+
+      <!-- classy mozna powtazac, mozna miec wiele elementow tej samej classy.Classa jest po to zeby jeden styl zastosowac do wielu elementów na stronie-->
+        
+
     <!-- uporządkowana lista -->
-   <br>
-   <br>
-   <article>
-    The World's Most Visited Places
-    <ol>
-        <li>Eiffel Tower,Paris</li>
-        <li>The Colosseum, Rome</li>
-        <li>Statue of Liberty, New York City</li>
-        <li>Machu Picchu, Peru</li>
-    </ol>
-</article>
+ 
+
+
     <!-- <tr>-строка таблицы -->
     <!-- <td>-заголовок таблицы-->
     <!-- <td>-ячейка таблицы  -->
- <div>
-   <table border="3">
+     
+ <div id="skills"> 
+    <b style="font-size: 25px; font-weight: 800;">Popular places</b>
+
+   <table>
     <tr>
       <th>City</th>
       <th>Visited</th>
@@ -77,5 +128,42 @@
   </table>
  </div>
 
+    
+<!-- clear both-zakaz odplywania dokumentow ktore znajdują sie pod -->
+    </div>
+
+
+<article>
+      <p>
+        What is the <strong>most</strong> visited ocean in the world?
+      </p>
+
+    
+
+    <b>The Pacific is the largest, and arguably the most famous,of the world's oceans.</b>
+</article>
+
+<br>
+<br>
+
+ <footer style="background-color: rgb(119, 109, 180);;">
+    <div >
+        <!-- <style="position: relative;
+    position: absolute; position: fixed; right: 20px; bottom: 0;"> <FIXED>- czyli stałe położenie elementu nie zależnie od przewijania pasku --> 
+
+        <!--!!!! position relative - względem pozycji, w której element aktualnie znajduje się. -->
+        
+        <!-- !!!!position fixed - pozycja ustalona niezależnie od położenia paska przewijania. -->
+        
+        <!--!!!! position absolute - pozycja względem rodzica, który jest pozycjonowany. -->
+
+
+        Footer area. &copy; <strong>Me</strong> & <b> My Tutor</b>
+        <!-- <p>Another sentence<p> -->
+    </div>
+    <p>Another sentence</p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
